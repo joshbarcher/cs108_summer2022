@@ -1,13 +1,13 @@
 # write a program that gathers information about our user and prints it back to them
 fullName = input("Enter your full-name: ")
 age = input("Enter your age: ")
-swimming = input("Do you like to swim? ")
+swimming = input("Do you like to swim? (True/False) ")
 number = input("Enter your favorite number: ")
 
 print() # a new line
 print("Your name is", fullName)
 print("Your age is", age)
-print("Do you like swimming (True/False)?", swimming)
+print("Do you like swimming?", swimming)
 
 # print out the favorite number squared
 squared = int(number) ** 2

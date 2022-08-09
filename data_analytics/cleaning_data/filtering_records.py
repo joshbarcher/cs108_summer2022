@@ -1,8 +1,8 @@
 import csv
 
 # open up the employee records file
-with open("datasets/employee_records.csv", "r", newline="") as badData:
-    with open("datasets/cleaned_records.csv", "w", newline="") as cleanData:
+with open("../datasets/employee_records.csv", "r", newline="") as badData:
+    with open("../datasets/cleaned_records.csv", "w", newline="") as cleanData:
         reader = csv.reader(badData)
         writer = csv.writer(cleanData)
 

@@ -1,6 +1,6 @@
 # open the file of points, remove duplicates, then write the unique points to a new file
-with open("datasets/points.txt", "r") as readFile:
-    with open("datasets/points_unique.txt", "w") as writeFile:
+with open("../datasets/points.txt", "r") as readFile:
+    with open("../datasets/points_unique.txt", "w") as writeFile:
         lines = readFile.readlines()
         print(f"List: {lines}")
         print(f"Lines in original file: {len(lines)}")

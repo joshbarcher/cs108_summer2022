@@ -10,7 +10,7 @@ mapRolls = {
     6: 0
 }
 
-numRolls = 10
+numRolls = 50
 with open(f"{numRolls}_rolls.txt", "r") as file:
     # read all lines of the file
     lines = file.readlines()
@@ -22,4 +22,8 @@ with open(f"{numRolls}_rolls.txt", "r") as file:
         # increment the frequency of the side of the dice that came up, in the map
         mapRolls[roll] += 1
 
-    print(mapRolls)
+    plt.bar(mapRolls.keys(), mapRolls.values())
+    plt.xlabel("Sides of a 6-sided dice")
+    plt.ylabel("Frequency of rolls")
+    plt.title(f"{numRolls} Dice Rolls")
+    plt.show()

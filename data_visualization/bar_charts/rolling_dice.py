@@ -1,7 +1,7 @@
 import random
 
 # roll dice n times
-times = 10
+times = 200000
 fileName = f"{times}_rolls.txt"
 
 with open(fileName, "w") as writer:
